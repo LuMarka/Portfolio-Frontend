@@ -1,0 +1,41 @@
+<div class="row" id="skills">
+    <h1>Hard & Soft Skills >><img src="../assets/img/cerebro.png" id="cerebro"> <img src="../assets/img/softSkills.png" id="softSkills"></h1>
+    
+    <div class="col-lg-12">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaskill" *ngIf="isLogged">
+            <i class="bi bi-plus-square"> Agregar Skill</i>
+        </button>
+    </div>
+    <div class="text-center col-sm-4 col-md-4 col-lg-4" *ngFor="let Skill of skill">
+        <circle-progress
+            [percent]="Skill.progreso"
+            [radius]="100"
+            [imageSrc]="Skill.img"
+            [showImage]="true"
+            [imageHeight]="70"
+            [imageWidth]="70"
+            [showUnits]="false"
+            [showSubtitle]="false"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="8"
+            [outerStrokeColor]="'#78C000'"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="600"
+            [lazy]="true"     
+        ></circle-progress>
+     
+        <div class="col-sm-4 col-md-2 col-lg-4 align-items-start flex-column" *ngIf="isLogged">
+            <button class="btn btn-secondary" routerLink="/editskill/{{Skill.id}}">
+                <i class="bi bi-pencil-square"></i></button>
+           <button class="btn btn-danger" (click)="delete(Skill.id)">
+            <i class="bi bi-trash2-fill"></i></button>
+        </div>        
+    </div> 
+    
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <a href="#info-actions" id="volver">Volver</a>
+</div>

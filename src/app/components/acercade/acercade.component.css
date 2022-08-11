@@ -1,0 +1,56 @@
+.row{
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: dotted;
+    border-color: rgb(106, 72, 138);
+    border-radius: 32px;
+    margin: 10px 10px;
+    text-align: center;
+    
+}
+div{
+    text-align: center;
+    background-color: rgb(194, 181, 211);
+    
+}
+
+#nombre{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    
+}
+
+@media (min-width: 576px) { 
+    #fotoperfil{
+        position: relative;
+        border-radius: 50%;
+        width: 23%;
+        box-shadow: 3px 3px 3px rgb(106, 72, 138);
+        left: 15%;
+        top:-60%;
+    }
+    #nombre{
+        margin-top: 10%;
+        
+    }
+}        
+@media (max-width: 575px) { 
+        #fotoperfil{
+            position: relative;
+            border-radius: 50%;
+            width: 45%;
+            box-shadow: 3px 3px 3px rgb(106, 72, 138);
+            align-self: center;
+            top: -60%;
+        }
+        #nombre{
+            margin-top: -125px;
+            
+        }
+    }
+    .btn{
+        border-width: medium;
+        padding: 8px;
+        margin: 1px;
+    }

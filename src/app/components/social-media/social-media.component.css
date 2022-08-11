@@ -1,0 +1,69 @@
+#gmail{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#github{
+    border-radius: 50%;
+}
+
+#twitter{
+    margin-left: 10px;
+}
+#discord{
+    border-radius: 50%;
+    margin: 10px;
+    
+}
+#skype{
+    width: 80px;
+    border-radius: 50%;
+    background-color: rgb(38, 23, 53);
+}
+#wap{
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(38, 23, 53);
+}
+img{
+    width: 50px;
+}
+
+.social {
+ padding-top: 20px;
+ padding-bottom: 20px;
+ background-color: rgb(38, 23, 53);
+ color: white;
+ text-align: center;
+ flex-direction: row;
+ flex-basis: auto;
+ border-radius: 32px;
+ 
+ 
+ 
+
+
+}
+
+.footer{
+    text-align: center;
+    color: white;
+    background-color: rgb(38, 23, 53);
+    border-radius: 32px;
+   ;
+}
+#contacto{ 
+    border-style: dotted;
+    border-color: rgb(106, 72, 138);
+    border-radius: 32px;
+    
+
+
+}
+/*#formulario{  
+    background-color: rgb(194, 181, 211);
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    flex-basis: auto;
+}*/

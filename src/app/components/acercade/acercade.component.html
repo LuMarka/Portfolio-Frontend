@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <!--<img src="../assets/img/fotoPerfil2.jpeg" class="img-fluid" id="fotoperfil" alt="Foto de perfil">-->
+        <img [src]="persona.img" class="img-fluid" id="fotoperfil" alt="Foto de perfil">
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-4 col-lg-3">
+        <h3 id="nombre">{{persona.nombre}} {{persona.apellido}}</h3>
+        <h4>Full Stack Developer Jr.</h4>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-5 col-lg-6">
+        <span>
+            <h1>Acerca de mí</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Non dolorem magnam numquam quos quia itaque repellendus 
+                illo iusto aliquid officia, animi recusandae molestias 
+                aut exercitationem 
+                beatae voluptates eius provident debitis.
+            </p>
+        </span>
+        <div id="info-actions">
+            <span><a href="#expList"><button type="button" class="btn btn-outline-dark"><b>Experiencia Laboral</b></button></a></span>
+            <span><a href="#eduList"><button type="button" class="btn btn-outline-dark"><b>Educación</b></button></a></span>
+            <br>
+            <span><a href="#skills"><button type="button" class="btn btn-outline-dark"><b>Mis habilidades</b></button></a></span>
+            <span><a href="#proyectos"><button type="button" class="btn btn-outline-dark" ><b>Mis proyectos</b></button></a></span>
+        </div>
+    </div>
+</div>

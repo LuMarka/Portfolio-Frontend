@@ -1,0 +1,24 @@
+.row, .text-center{
+    padding:20px;
+    background-color: rgb(194, 181, 211);
+    border-style: dotted;
+    border-color: rgb(106, 72, 138);
+    border-radius: 32px;
+    margin: 10px 10px;
+    
+}
+
+#cerebro{
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+#softSkills{
+    width:80px;
+    border-radius: 20%;
+    margin-left: 15px;
+}
+#volver{
+    margin-left: 160px;
+}

@@ -1,0 +1,33 @@
+#logoAP{
+    width:140px;
+    margin-left: 2px;
+    
+
+}
+
+.navbar{
+    background-color: rgb(38, 23, 53);
+  
+}
+
+.mr-auto{
+    margin-right: 2px;
+    margin-left: auto;
+}
+
+@media(max-width:575px){
+    .container-fluid{
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    #navbarSupportedContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0%;
+    }
+}
+
+.btn{
+    border-width: medium;
+}

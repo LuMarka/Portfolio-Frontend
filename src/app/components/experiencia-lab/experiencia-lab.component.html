@@ -1,0 +1,62 @@
+<div class="row">
+    <h1 id="expList">Experiencia Laboral >> <img src="../assets/img/expLab.png" id="explab"></h1><br><br><br>
+    <div class="col-lg-1">
+      <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+        <i class="bi bi-plus-square"> Agregar experiencia laboral</i>
+    </button>
+    </div>
+<div class="col-lg-10">
+  
+
+    <table class="table">
+      <tbody>
+          <tr *ngFor="let Experiencia of expe">
+              <td>
+                  <h4>{{Experiencia.nombreE}}</h4>
+              </td>
+              <td><h6>{{Experiencia.descripcionE}}</h6></td>
+              <td *ngIf="isLogged">
+                  <button class="btn btn-secondary" routerLink="/editexp/{{Experiencia.id}}">
+                      <i class="bi bi-pencil-square"></i></button>
+              </td>
+              <td *ngIf="isLogged">
+                 <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                  <i class="bi bi-trash2-fill"></i></button>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+    <!--<ul style="list-style-type: square;" class="items-list" id="expList">
+      
+      <li><img id="marash" src="../assets/img/MarashTech.png"> <h4><b><< Presente |  Marash Technologies Inc., Maipú - Mendoza. >></b></h4><br>
+      <h6> Desarrollo Web. </h6></li><br>-->
+
+   <!-- <li><a href="http://www.estudiogalantesrl.com.ar/" target="_blanc"><img id="omni" src="../assets/img/galante.png"></a><h4><b>	<< 10.2017 – Presente |  Estudio Galante SRL, Av. Perito Moreno 533 - Godoy Cruz, Mendoza. >></b></h4><br>
+      <h6> Administración. Facturación.</h6></li><br>
+<hr>
+    <li><a href="https://www.omnisrl.com.ar/index.html" target="_blanc"><img id="omni" src="../assets/img/omni.png"></a><h4><b>	<< 11.2014 |  Omni SRL, Bodega Los Toneles - Mendoza. >> </b></h4><br>
+      <h6> Venta de equipamiento médico. Asistente en stand comercial (Congreso organizado por la SARyV).</h6></li><br>   
+      <hr>
+    <li><a href="https://www.omnisrl.com.ar/index.html" target="_blanc"><img id="omni" src="../assets/img/omni.png"></a><h4><b>	<< 09.2009 – 11.2013 |  Omni SRL, Jean Jaures 419 of. 11 - CABA. >> </b></h4><br>
+      <h6>Secretaria administrativa - Asistente de gerencia. Venta de equipamiento médico. Administración. Recepción. Logística.</h6></li><br>
+      <hr>
+    <li><a href="https://www.alibertibazar.com/" target="_blank"><img id="aliberti" src="../assets/img/aliberti.png"></a>
+      <h4><b> << 04.2008 – 02.2009 |  TEPSA - Tecnología en Equipamientos Profesionales SA/ Aliberti Bazar, Solís 1405 - CABA. >> </b></h4><br>
+      <h6> Administrativa Contable. Tareas Administrativas en general. Gestión de cobranzas. Trámites en general (bancarios, Afip, Rentas, Juzgados). 
+        Conciliación de ctas. ctes. Facturación. Archivo. Altas de clientes - Sistema de gestión utilizado: Tango.</h6></li><br>
+        <hr>
+    <li><a href="https://cui.edu.ar/" target="_blank"> <img id="cui" src="../assets/img/cui.png"></a><h4><b><< CUI - Centro Universitario de Idiomas >></b> </h4><br>
+      <h6>Tareas administrativas en general. Recepción. Informes. Caja.</h6></li>
+      <ol><h6>•	03.2008 - 03.2008 |  Boedo 265 – Lomas de Zamora. </h6></ol>
+      <ol><h6>•	07.2007 - 08.2007 |  Junín 222- CABA. </h6></ol>
+      <ol><h6>•	03.2007 - 03.2007 |  Alsina 273 - Avellaneda</h6></ol>
+      <br> 
+  </ul>-->
+
+  <div class="col-lg-1"></div>
+  <br>
+  <a href="#info-actions">Volver</a>
+
+</div>
+</div>
+

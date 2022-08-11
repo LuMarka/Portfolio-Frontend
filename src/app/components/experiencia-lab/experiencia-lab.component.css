@@ -1,0 +1,51 @@
+
+.row{
+    padding:20px;
+    background-color: rgb(194, 181, 211);
+    border-style: dotted;
+    border-color: rgb(106, 72, 138);
+    border-radius: 32px;
+    margin: 10px 10px;
+    
+}
+h1, h4, h6{
+    display:inline;
+}
+
+#omni{
+    width: 100px;
+    padding: 0px 5px 10px 0px;
+  
+    
+}
+
+#aliberti{
+    width: 80px;
+    padding:0px 32px 10px 0px;
+   
+}
+
+#cui{
+    width: 80px;
+    padding:0px 5px 10px 0px;
+}
+
+#at-cliente{
+    width: 80px;
+    height: 65px;
+    padding:0px 5px 10px 0px;
+}
+
+
+#marash{
+    width: 80px;
+    padding:0px 5px 10px 0px;
+    border: 70%;
+}
+
+#explab{
+    width:67px;
+    margin-left: 15px;
+    border-radius:50%;
+   
+}

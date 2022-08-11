@@ -1,0 +1,86 @@
+
+<div class="row">
+    <h1 id="educacion">Educación >><img src="../assets/img/educacion.png" id="educ"></h1><br><br><br>
+    <!--<div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-plus" onclick="showNewEduModal()"></i></a></div>
+    <i class="fa fa-pen" ></i>-->
+    <div class="col-lg-1">
+      <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+        <i class="bi bi-plus-square"> Agregar educación!</i>
+    </button>
+    </div>
+
+      <div class="col-lg-10">
+
+        <table class="table">
+          <tbody>
+              <tr *ngFor="let Educacion of educacion">
+                  <td>
+                      <h4>{{Educacion.nombreE}}</h4>
+                  </td>
+                  <td><h6>{{Educacion.descripcionE}}</h6></td>
+                  <td *ngIf="isLogged">
+                      <button class="btn btn-secondary" routerLink="/editedu/{{Educacion.id}}">
+                          <i class="bi bi-pencil-square"></i></button>
+                  </td>
+                  <td *ngIf="isLogged">
+                     <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                      <i class="bi bi-trash2-fill"></i></button>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+
+
+         <!--<ul style="list-style: square;"class="items-list" id="eduList">
+           <li><a href="https://argentinaprograma.inti.gob.ar/" target="_blank"><img id="logoAP" src="../assets/img/APLogoo.png"></a>
+            <h4><b><< Argentina Programa - INTI - Ministerio de Desarrollo Productivo >> </b></h4>
+            <h6>|  Programador Web Full Stack Jr.</h6>
+          </li><br>
+            <hr>
+
+          <li><a href="https://www.fmed.uba.ar/carreras/tecnicatura-universitaria-en-hemoterapia-e-inmunohematologia/informacion-general" target="_blank">
+            <img id="uba" src="https://inerciacero.files.wordpress.com/2011/07/logo-uba.png" ></a>
+            <h4><b>  <<  UBA - Facultad de Ciencias Médicas  >></b></h4>
+            <h6>|  Técnico en Hemoterapia e Inmunohematología.</h6>
+          </li><br>
+            <hr>
+
+          <li><a href="https://www.apuba.org.ar/" target="_blank"><img id="apuba" src="../assets/img/apuba.png"></a>
+            <h4><b> << APUBA - Facultad de Ciencias Médicas >>  </b></h4>
+            <h6>|  Auxiliar Extraccionista de Laboratorio.</h6>
+          </li><br>
+        <hr>
+
+          <li ><a href="https://www.cfecursos.com.ar/" target="_blank"> <img id="logoCFE" src="../assets/img/cfe-logo.png" alt="logo CFE"></a>
+            <h4><b><< CFE - Centro de Formación para la Excelencia >></b></h4>
+          <h6 >|  Auxiliar Administrativa Contable.</h6></li><br> 
+          <hr>
+
+          <li ><a href="https://ubaxxi.uba.ar/" target="_blank"> <img id="ubaxxi" src="../assets/img/LogoUBAXXI.png"></a>
+            <h4><b><< UBA XXI >></b></h4>
+            <h6><b> Curso >></b>|  Recursos de Internet. </h6></li><br>
+          <hr>
+
+          <li ><a href="https://empleos.amia.org.ar/busco-empleo/capacitacion-gratuita/" target="_blank"><img id="amia" src="../assets/img/amia.png"></a>
+            <h4><b><< Web Campus Amia-empleos >>  </b></h4>
+            <h6 id="cursosAmia"><b>Cursos >> </b>|  Microsoft Office Access - nivel básico.</h6>
+            <h6 id="cursosAmia">   |  Microsoft Office Word - nivel intermedio</h6>
+            <h6 id="cursosAmia">   |  Microsoft Office PowerPoint - nivel intermedio</h6>
+            <h6 id="cursosAmia">   |  Microsoft Office Excel - nivel intermedio.</h6></li><br>
+            <hr>
+
+          <li > <a href="http://www.iac.com.ar/" target="_blanc"><img id="iac" src="../assets/img/iac.png"></a>
+            <h4><b><< IAC - Instituto Argentino de Computación >>  </b></h4>
+          <h6><b>Curso >> </b>|  Microsoft Office Excel.</h6>
+        </li><br>
+      <br> 
+  </ul>
+
+  <div class="col-lg-1"></div>
+  <br>-->
+  <a href="#info-actions">Volver</a>
+
+</div>
+</div>
+   
+    

@@ -1,0 +1,27 @@
+ <!--<a href="https://argentinaprograma.inti.gob.ar/" target="_blank"> <img src="../assets/img/APLogo.png" alt="logo Argentina Programa" id="logoAP">
+</a>-->
+
+        <!--<form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>-->
+      
+        <nav class="navbar navbar-expand-sm sticky-top">
+ 
+          <div class="container-fluid">
+            <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/" target="_blank"> 
+              <img id="logoAP" src="../assets/img/APLogoo.png" alt="logo Argentina Programa">
+            </a>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">  
+                    <li class="nav-item">
+                      <span><a href="#contacto"><button class="btn btn-outline-light my-2 my-sm-2" type="submit">Contacto</button></a></span>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-sm-0">
+                    <button class="btn btn-outline-light my-2 my-sm-2" type="submit" (click)="login()" *ngIf="!isLogged">Login</button>  
+                    <button class="btn btn-outline-light my-2 my-sm-2" type="submit" (click)="onLogOut()" *ngIf="isLogged">Logout</button> 
+                  </form>
+              </div>
+          </div>
+        </nav>
