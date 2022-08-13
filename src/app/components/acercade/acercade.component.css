@@ -16,8 +16,8 @@ div{
 
 #nombre{
     font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 50px;
+    margin-bottom: 25px;
     
 }
 
@@ -25,13 +25,13 @@ div{
     #fotoperfil{
         position: relative;
         border-radius: 50%;
-        width: 23%;
+        width: 90%;
         box-shadow: 3px 3px 3px rgb(106, 72, 138);
-        left: 15%;
-        top:-60%;
+        left: 8%;
+        top:-30%;
     }
     #nombre{
-        margin-top: 10%;
+        margin-top: 50px;
         
     }
 }        
@@ -39,7 +39,7 @@ div{
         #fotoperfil{
             position: relative;
             border-radius: 50%;
-            width: 45%;
+            width: 50%;
             box-shadow: 3px 3px 3px rgb(106, 72, 138);
             align-self: center;
             top: -60%;
@@ -49,8 +49,12 @@ div{
             
         }
     }
-    .btn{
-        border-width: medium;
-        padding: 8px;
-        margin: 1px;
+.btn{
+    border-width: medium;
+    padding: 8px;
+    margin: 2px;
     }
+
+.acercade{
+    margin-top: 50px;
+}

@@ -2,7 +2,7 @@
     <h1 id="expList">Experiencia Laboral >> <img src="../assets/img/expLab.png" id="explab"></h1><br><br><br>
     <div class="col-lg-1">
       <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
-        <i class="bi bi-plus-square"> Agregar experiencia laboral</i>
+        <i class="bi bi-plus-square"></i>
     </button>
     </div>
 <div class="col-lg-10">
@@ -12,12 +12,12 @@
       <tbody>
           <tr *ngFor="let Experiencia of expe">
               <td>
-                  <h4>{{Experiencia.nombreE}}</h4>
+                  <h5>{{Experiencia.nombreE}}</h5>
               </td>
               <td><h6>{{Experiencia.descripcionE}}</h6></td>
               <td *ngIf="isLogged">
                   <button class="btn btn-secondary" routerLink="/editexp/{{Experiencia.id}}">
-                      <i class="bi bi-pencil-square"></i></button>
+                    <i class="bi bi-pen-fill"></i></button>
               </td>
               <td *ngIf="isLogged">
                  <button class="btn btn-danger" (click)="delete(Experiencia.id)">
@@ -26,12 +26,9 @@
           </tr>
       </tbody>
   </table>
-    <!--<ul style="list-style-type: square;" class="items-list" id="expList">
+    <!--<ul style="list-style-type: square;" class="items-list" id="expList">-->
       
-      <li><img id="marash" src="../assets/img/MarashTech.png"> <h4><b><< Presente |  Marash Technologies Inc., Maipú - Mendoza. >></b></h4><br>
-      <h6> Desarrollo Web. </h6></li><br>-->
-
-   <!-- <li><a href="http://www.estudiogalantesrl.com.ar/" target="_blanc"><img id="omni" src="../assets/img/galante.png"></a><h4><b>	<< 10.2017 – Presente |  Estudio Galante SRL, Av. Perito Moreno 533 - Godoy Cruz, Mendoza. >></b></h4><br>
+ <!--<li><a href="http://www.estudiogalantesrl.com.ar/" target="_blanc"><img id="omni" src="../assets/img/galante.png"></a><h4><b>	<< 10.2017 – Presente |  Estudio Galante SRL, Av. Perito Moreno 533 - Godoy Cruz, Mendoza. >></b></h4><br>
       <h6> Administración. Facturación.</h6></li><br>
 <hr>
     <li><a href="https://www.omnisrl.com.ar/index.html" target="_blanc"><img id="omni" src="../assets/img/omni.png"></a><h4><b>	<< 11.2014 |  Omni SRL, Bodega Los Toneles - Mendoza. >> </b></h4><br>

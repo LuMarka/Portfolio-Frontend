@@ -7,7 +7,7 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root'
 })
 export class SExperienciaService {
-  expURL = 'http://localhost:8080/explab';//de la annotation del Controller de experiencia laboral
+  expURL = 'http://localhost:8080/explab/';//de la annotation del Controller de experiencia laboral
 
   constructor(private httpClient: HttpClient) { }
 

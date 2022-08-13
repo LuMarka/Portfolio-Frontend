@@ -3,7 +3,7 @@
     <div class="contenedor">
         <div class="col-lg-1">
             <button type="button" class="btn btn-dark" routerLink="/nuevopro" *ngIf="isLogged">
-                <i class="bi bi-plus-square"> Agregar proyecto!</i>
+                <i class="bi bi-plus-square"></i>
             </button>
         </div>
         <div class="col-lg-11">
@@ -11,10 +11,13 @@
                 <tbody>
                     <tr *ngFor="let Proyecto of proyecto">
                         <td class="col-lg-3">
-                            <h3>{{Proyecto.nombreP}}</h3>
+                            <h4>{{Proyecto.nombreP}}</h4>
                         </td>
-                        <td class="col-lg-3"><h4>
-                            {{Proyecto.descripcionP}}</h4>
+                        <td class="col-lg-3">
+                            <h6>{{Proyecto.descripcionP}}</h6>
+                        </td>
+                        <td class="col-lg-4">
+                            <div ><img [src]="Proyecto.img" alt="Este proyecto" class="img-fluid img-proyecto"></div>
                         </td>
                         <td *ngIf="isLogged">
                             <button class="btn btn-secondary" routerLink="/editpro/{{Proyecto.id}}">
@@ -24,9 +27,7 @@
                         <button class="btn btn-danger" (click)="delete(Proyecto.id)">
                             <i class="bi bi-trash2-fill"></i></button>
                         </td>
-                        <td class="col-lg-4">
-                            <div ><img [src]="Proyecto.img" alt="Este proyecto" class="img-fluid img-proyecto"></div>
-                        </td>
+
                     </tr>
                 </tbody>
             </table>

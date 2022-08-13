@@ -27,6 +27,7 @@ import { NewProyectoComponent } from './components/proyectos/new-proyecto.compon
 import { EditProyectoComponent } from './components/proyectos/edit-proyecto.component';
 import { NewskillComponent } from './components/skills/newskill.component';
 import { EditskillComponent } from './components/skills/editskill.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { EditskillComponent } from './components/skills/editskill.component';
     EditProyectoComponent,
     NewskillComponent,
     EditskillComponent,
+
     
   ],
   imports: [
@@ -59,7 +61,8 @@ import { EditskillComponent } from './components/skills/editskill.component';
     HttpClientModule,
     ToastrModule.forRoot({}),
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
 
   ],
   providers: [
