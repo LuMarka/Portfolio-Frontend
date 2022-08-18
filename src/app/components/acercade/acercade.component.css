@@ -6,6 +6,7 @@
     border-radius: 32px;
     margin: 10px 10px;
     text-align: center;
+    width: 100%;
     
 }
 div{
@@ -18,6 +19,7 @@ div{
     font-weight: bold;
     margin-top: 50px;
     margin-bottom: 25px;
+    font-size: 38px;;
     
 }
 
@@ -56,5 +58,5 @@ div{
     }
 
 .acercade{
-    margin-top: 50px;
+    margin-top: 40px;
 }

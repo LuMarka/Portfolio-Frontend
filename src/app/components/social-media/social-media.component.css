@@ -1,6 +1,7 @@
 #gmail{
     border-radius: 50%;
     margin-right: 10px;
+    width: 70px;
 }
 
 #github{
@@ -21,9 +22,9 @@
     background-color: rgb(38, 23, 53);
 }
 #wap{
-    width: 50px;
+    width: 35px;
     border-radius: 50%;
-    background-color: rgb(38, 23, 53);
+    
 }
 img{
     width: 50px;
@@ -38,10 +39,6 @@ img{
  flex-direction: row;
  flex-basis: auto;
  border-radius: 32px;
- 
- 
- 
-
 
 }
 
@@ -50,14 +47,15 @@ img{
     color: white;
     background-color: rgb(38, 23, 53);
     border-radius: 32px;
-   ;
+   
+   
 }
 #contacto{ 
     border-style: dotted;
     border-color: rgb(106, 72, 138);
     border-radius: 32px;
-    
-
+    width: 100%;
+    margin: 10px 10px;
 
 }
 /*#formulario{  

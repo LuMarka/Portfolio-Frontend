@@ -1,27 +1,27 @@
 <div class="row" id="skills">
     <h1>Hard & Soft Skills >><img src="../assets/img/cerebro.png" id="cerebro"> <img src="../assets/img/softSkills.png" id="softSkills"></h1>
     
-    <div class="col-lg-12">
-        <button type="button" class="btn btn-dark" routerLink="/nuevaskill" *ngIf="isLogged">
+    <div class="col-lg-11">
+        <button type="button" class="btn btn-success" routerLink="/nuevaskill" *ngIf="isLogged">
             <i class="bi bi-plus-square"></i>
         </button>
     </div>
     <div class="text-center col-sm-4 col-md-4 col-lg-4" *ngFor="let Skill of skill">
         <circle-progress
             [percent]="Skill.progreso"
-            [radius]="100"
+            [radius]="75"
             [imageSrc]="Skill.img"
             [showImage]="true"
-            [imageHeight]="70"
-            [imageWidth]="70"
+            [imageHeight]="60"
+            [imageWidth]="60"
             [showUnits]="false"
             [showSubtitle]="false"
-            [outerStrokeWidth]="16"
+            [outerStrokeWidth]="12"
             [innerStrokeWidth]="8"
-            [outerStrokeColor]="'#78C000'"
-            [innerStrokeColor]="'#C7E596'"
+            [outerStrokeColor]="'rgb(106, 72, 138)'"
+            [innerStrokeColor]="'rgb(38, 23, 53)'"
             [animation]="true"
-            [animationDuration]="600"
+            [animationDuration]="800"
             [lazy]="true"     
         ></circle-progress>
      
@@ -33,9 +33,7 @@
         </div>        
     </div> 
     
-    <br><br><br>
-    <br><br><br>
-    <br><br><br>
-    <br><br><br>
+    <div class="col-lg-1"></div>
+    <br>
     <a href="#info-actions" id="volver">Volver</a>
 </div>

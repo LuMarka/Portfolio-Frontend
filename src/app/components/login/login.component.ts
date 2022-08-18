@@ -50,8 +50,7 @@ export class LoginComponent implements OnInit {
         this.errMsj = err.error.mensaje;  
         this.toastr.error(this.errMsj, 'Datos ingresados incorrectos', {
         timeOut: 3000,  positionClass: 'toast-top-center',
-        //this.toastrService.error('Fail', {
-        //timeOut: 3000, positionClass: 'toast-top-center', ***ver si este funciona
+  
           });
       })
   }

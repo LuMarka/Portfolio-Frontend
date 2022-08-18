@@ -5,11 +5,14 @@
     border-color: rgb(106, 72, 138);
     border-radius: 32px;
     margin: 10px 10px;
+    width: 100%;
     
 }
 
 .contenedor{
     width:auto;
+
+    
 }
 .parte1, .parte2, .parte3{
     display:inline-block;
@@ -28,12 +31,12 @@
 }
     
 #volver{
-    margin-left: 160px;
+    margin-left: 120px;
 }
 
 #github{
     border-radius: 50%;
-    width:80px;
+    width:60px;
     margin-left: 15px;
 }
 .img-proyecto{
@@ -56,4 +59,5 @@
     90% {transform: rotate(0deg); }
     100% {transform: rotate(-1deg); }
 }
+
 

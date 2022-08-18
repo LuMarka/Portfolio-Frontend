@@ -2,7 +2,7 @@
     <h1>Mis Proyectos >><a href="https://github.com/LuMarka" target="_blank"><img src="../assets/img/github.png" alt="logo GitHub"  id="github"></a></h1> 
     <div class="contenedor">
         <div class="col-lg-1">
-            <button type="button" class="btn btn-dark" routerLink="/nuevopro" *ngIf="isLogged">
+            <button type="button" class="btn btn-success" routerLink="/nuevopro" *ngIf="isLogged">
                 <i class="bi bi-plus-square"></i>
             </button>
         </div>
@@ -16,18 +16,15 @@
                         <td class="col-lg-3">
                             <h6>{{Proyecto.descripcionP}}</h6>
                         </td>
-                        <td class="col-lg-4">
-                            <div ><img [src]="Proyecto.img" alt="Este proyecto" class="img-fluid img-proyecto"></div>
+                        <td class="col-lg-4 ">
+                            <div ><img [src]="Proyecto.img" alt="Este proyecto" class="img-fluid img-proyecto" id="imgProyecto"></div>
                         </td>
                         <td *ngIf="isLogged">
                             <button class="btn btn-secondary" routerLink="/editpro/{{Proyecto.id}}">
-                                <i class="bi bi-pencil-square"></i></button>
-                        </td>
-                        <td *ngIf="isLogged">
-                        <button class="btn btn-danger" (click)="delete(Proyecto.id)">
+                            <i class="bi bi-pencil-square"></i></button>
+                            <button class="btn btn-danger" (click)="delete(Proyecto.id)">
                             <i class="bi bi-trash2-fill"></i></button>
                         </td>
-
                     </tr>
                 </tbody>
             </table>
@@ -53,7 +50,8 @@
         </div>
 
     </div>-->
-    <br><br>
+    <div class="col-lg-1"></div>
+    <br>
     <a href="#info-actions" id="volver">Volver</a>
     </div>
 </div>

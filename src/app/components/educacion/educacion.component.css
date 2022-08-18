@@ -5,13 +5,19 @@
     border-color: rgb(106, 72, 138);
     border-radius: 32px;
     margin: 10px 10px;
+    width: 100%;
 }
 
-h1, h4, h6{
+h1, h5, h6{
     display:inline;
 }
-
-#logoAP{
+#educ{
+    width:67px;
+    margin-left: 15px;
+    border-radius:50%;
+   
+}
+/*#logoAP{
     width:90px;
     height: 35px;
     
@@ -32,13 +38,8 @@ h1, h4, h6{
 #ubaxxi, #iac, #amia{
     width: 75px;
     padding: 2px 8px 7px;
-}
-#educ{
-    width:67px;
-    margin-left: 15px;
-    border-radius:50%;
-   
-}
+}*/
+
 /*#cursosAmia{
      text-align: center;   
 

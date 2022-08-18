@@ -59,7 +59,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
-    ToastrModule.forRoot({}),
+    ToastrModule.forRoot(),
     BrowserAnimationsModule,
     FormsModule,
     FontAwesomeModule

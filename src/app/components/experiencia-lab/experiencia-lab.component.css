@@ -6,13 +6,14 @@
     border-color: rgb(106, 72, 138);
     border-radius: 32px;
     margin: 10px 10px;
+    width: 100%;
     
 }
 h1, h5, h6{
     display:inline;
 }
 
-#omni{
+/*#omni{
     width: 100px;
     padding: 0px 5px 10px 0px;
   
@@ -41,7 +42,7 @@ h1, h5, h6{
     width: 80px;
     padding:0px 5px 10px 0px;
     border: 70%;
-}
+}*/
 
 #explab{
     width:67px;
