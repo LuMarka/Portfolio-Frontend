@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "portfoliolumarka",
+    "lumarka":"portfoliolumarka"
+  },
+  "targets":{},
+  "etags":{}
+}

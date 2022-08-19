@@ -14,7 +14,9 @@
               <td>
                   <h5>{{Experiencia.nombreE}}</h5>
               </td>
-              <td><h6>{{Experiencia.descripcionE}}</h6></td>
+              <td >
+                <h6>{{Experiencia.descripcionE}}</h6>
+              </td>
               <td *ngIf="isLogged">
                   <button class="btn btn-secondary" routerLink="/editexp/{{Experiencia.id}}">
                     <i class="bi bi-pen-fill"></i></button>
@@ -26,6 +28,12 @@
           </tr>
       </tbody>
   </table>
+  <div class="col-lg-1"></div>
+  <br>
+  <a href="#info-actions">Volver</a>
+
+</div>
+</div>
     <!--<ul style="list-style-type: square;" class="items-list" id="expList">-->
       
  <!--<li><a href="http://www.estudiogalantesrl.com.ar/" target="_blanc"><img id="omni" src="../assets/img/galante.png"></a><h4><b>	<< 10.2017 – Presente |  Estudio Galante SRL, Av. Perito Moreno 533 - Godoy Cruz, Mendoza. >></b></h4><br>
@@ -50,10 +58,5 @@
       <br> 
   </ul>-->
 
-  <div class="col-lg-1"></div>
-  <br>
-  <a href="#info-actions">Volver</a>
 
-</div>
-</div>
 

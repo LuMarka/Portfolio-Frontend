@@ -11,6 +11,15 @@
 }
 h1, h5, h6{
     display:inline;
+    
+    text-align: justify;
+}
+
+#explab{
+    width:67px;
+    margin-left: 15px;
+    border-radius:50%;
+   
 }
 
 /*#omni{
@@ -43,10 +52,3 @@ h1, h5, h6{
     padding:0px 5px 10px 0px;
     border: 70%;
 }*/
-
-#explab{
-    width:67px;
-    margin-left: 15px;
-    border-radius:50%;
-   
-}

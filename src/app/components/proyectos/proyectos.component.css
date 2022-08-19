@@ -41,12 +41,12 @@
 
 
 
-/*.parte1, .parte2, .parte3{
+.parte1, .parte2, .parte3{
     display:inline-block;
     text-align: justify;
 }
 
-.img-proyecto-marash{
+/*.img-proyecto-marash{
     border-radius:50%;
     width: 75%;
 
