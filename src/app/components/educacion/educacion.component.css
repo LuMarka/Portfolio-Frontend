@@ -5,7 +5,7 @@
     border-color: rgb(106, 72, 138);
     border-radius: 32px;
     margin: 10px 10px;
-    width: 100%;
+    width: auto;
 }
 
 h1, h5, h6{

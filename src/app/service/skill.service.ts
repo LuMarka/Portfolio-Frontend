@@ -23,7 +23,7 @@ export class SkillService {
     return this.httpClient.post<any>(this.skillURL + 'create', skill);
   }
 
-  public update(id:number, skill:Skill):Observable<any>{
+  public update(id:number, skill: Skill):Observable<any>{
     return this.httpClient.put<any>(this.skillURL + `update/${id}`, skill);
   }
 

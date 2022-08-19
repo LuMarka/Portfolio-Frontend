@@ -1,6 +1,6 @@
 <div class="row" id="proyectos">
     <h1>Mis Proyectos >><a href="https://github.com/LuMarka" target="_blank"><img src="../assets/img/github.png" alt="logo GitHub"  id="github"></a></h1> 
-    <div class="contenedor">
+    <div class="container">
         <div class="col-lg-1">
             <button type="button" class="btn btn-success" routerLink="/nuevopro" *ngIf="isLogged">
                 <i class="bi bi-plus-square"></i>
@@ -17,7 +17,7 @@
                             <h6>{{Proyecto.descripcionP}}</h6>
                         </td>
                         <td class="col-lg-4 ">
-                            <div ><img [src]="Proyecto.img" alt="Este proyecto" class="img-fluid img-proyecto" id="imgProyecto"></div>
+                            <div ><img [src]="Proyecto.img" alt="img proyecto AP" class="img-fluid img-proyecto" id="imgProyecto"></div>
                         </td>
                         <td *ngIf="isLogged">
                             <button class="btn btn-secondary" routerLink="/editpro/{{Proyecto.id}}">

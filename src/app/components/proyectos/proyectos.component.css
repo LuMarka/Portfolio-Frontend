@@ -5,33 +5,12 @@
     border-color: rgb(106, 72, 138);
     border-radius: 32px;
     margin: 10px 10px;
-    width: 100%;
+    width: auto;
     
 }
 
-.contenedor{
-    width:auto;
-
-    
-}
-.parte1, .parte2, .parte3{
-    display:inline-block;
-    text-align: justify;
-}
-
-.img-proyecto-marash{
-    border-radius:50%;
-    width: 75%;
-
-    
-}
-.img-proyecto-licuadora{
-    border-radius:20%;
-    width: 75%;
-}
-    
-#volver{
-    margin-left: 120px;
+.container{
+    width:auto; 
 }
 
 #github{
@@ -60,4 +39,21 @@
     100% {transform: rotate(-1deg); }
 }
 
+
+
+/*.parte1, .parte2, .parte3{
+    display:inline-block;
+    text-align: justify;
+}
+
+.img-proyecto-marash{
+    border-radius:50%;
+    width: 75%;
+
+    
+}
+.img-proyecto-licuadora{
+    border-radius:20%;
+    width: 75%;
+}*/
 
