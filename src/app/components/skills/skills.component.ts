@@ -36,7 +36,8 @@ export class SkillsComponent implements OnInit {
   delete(id?: number){
     if(id!=undefined){
       this.skillS.delete(id).subscribe(
-        data =>{
+        data => {
+          alert ("Elemento eliminado correctamente");
           this.cargarSkill();
         }, err => {
           alert("No se pudo eliminar");

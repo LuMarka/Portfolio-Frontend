@@ -7,16 +7,16 @@
             </button>
         </div>
         <div class="col-lg-11">
-            <table class="table">
+            <table>
                 <tbody>
                     <tr *ngFor="let Proyecto of proyecto">
-                        <td class="col-sm-11 col-md-7 col-lg-3 parte1">
+                        <td class="col-sm-11 col-md-10 col-lg-3 parte1">
                             <h4>{{Proyecto.nombreP}}</h4>
                         </td>
-                        <td class="col-sm-11 col-md-7 col-lg-4 parte2">
+                        <td class="col-sm-11 col-md-10 col-lg-4 parte2">
                             <h6>{{Proyecto.descripcionP}}</h6>
                         </td>
-                        <td class="col-sm-11 col-md-7 col-lg-4 parte3">
+                        <td class="col-sm-11 col-md-10 col-lg-4 flex-end parte3">
                             <div ><img [src]="Proyecto.img" alt="img proyecto AP" class="img-fluid img-proyecto" id="imgProyecto"></div>
                         </td>
                         <td *ngIf="isLogged">
@@ -52,6 +52,6 @@
     </div>-->
     <div class="col-lg-1"></div>
     <br>
-    <a href="#info-actions" id="volver">Volver</a>
+    <a href="#info-actions" id="volver" ><button type="button" class="btn btn-outline-dark">Volver</button></a>
     </div>
 </div>

@@ -1,38 +1,39 @@
 
 <div class="row">
-    <h1 id="educacion">Educación >><img src="../assets/img/educacion.png" id="educ"></h1><br><br><br>
-    <div class="col-lg-1">
+    <h1  id="educacion">Educación >><img src="../assets/img/educacion.png" id="educ"></h1><br>
+    <div class="col-lg-1"><!-- Botón de Agregar-->
       <button type="button" class="btn btn-success" routerLink="/nuevaedu" *ngIf="isLogged">
         <i class="bi bi-plus-square"></i>
-    </button>
+      </button>
     </div>
-
-      <div class="col-lg-10">
-
+    <div class="col-lg-10">
         <table class="table">
           <tbody>
               <tr *ngFor="let Educacion of educacion">
-                  <td>
+                  <td >
                       <h5>{{Educacion.nombreE}}</h5>
                   </td>
-                  <td><h6>{{Educacion.descripcionE}}</h6></td>
-                  <td *ngIf="isLogged">
-                      <button class="btn btn-secondary" routerLink="/editedu/{{Educacion.id}}">
-                          <i class="bi bi-pencil-square"></i></button>
+                  <td >
+                    <h6>{{Educacion.descripcionE}}</h6>
                   </td>
-                  <td *ngIf="isLogged">
+                  <!-- Botones de Editar y borrar -->
+                  <td *ngIf="isLogged" class="col-1">
+                      <button class="btn btn-secondary" routerLink="/editedu/{{Educacion.id}}">
+                        <i class="bi bi-pen-fill"></i>
+                      </button>
                      <button class="btn btn-danger" (click)="delete(Educacion.id)">
-                      <i class="bi bi-trash2-fill"></i></button>
+                      <i class="bi bi-trash2-fill"></i>
+                    </button>
                   </td>
               </tr>
           </tbody>
-      </table>
-      <div class="col-lg-1"></div>
-      <br>
-      <a href="#info-actions">Volver</a>
+        </table>
+    </div>
+    <div class="col-lg-1"></div>
+    <br>
+      <a href="#logoAP" id="volver" ><button type="button" class="btn btn-outline-dark">Volver</button></a>
+</div> 
 
-    </div>
-    </div>
          <!--<ul style="list-style: square;"class="items-list" id="eduList">
            <li><a href="https://argentinaprograma.inti.gob.ar/" target="_blank"><img id="logoAP" src="../assets/img/APLogoo.png"></a>
             <h4><b><< Argentina Programa - INTI - Ministerio de Desarrollo Productivo >> </b></h4>

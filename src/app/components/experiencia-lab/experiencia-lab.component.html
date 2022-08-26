@@ -1,38 +1,36 @@
 <div class="row">
-    <h1 id="expList">Experiencia Laboral >> <img src="../assets/img/expLab.png" id="explab"></h1><br><br><br>
-    <div class="col-lg-1">
-      <button type="button" class="btn btn-success" routerLink="/nuevaexp" *ngIf="isLogged">
-        <i class="bi bi-plus-square"></i>
-    </button>
-    </div>
+    <h1 id="expList">Experiencia Laboral >> <img src="../assets/img/expLab.png" id="explab"></h1><br>
+      <div class="col-lg-1"><!-- Botón de Agregar-->
+        <button type="button" class="btn btn-success" routerLink="/nuevaexp" *ngIf="isLogged">
+          <i class="bi bi-plus-square"></i>
+        </button>
+      </div>
 <div class="col-lg-10">
-  
-
     <table class="table">
       <tbody>
           <tr *ngFor="let Experiencia of expe">
               <td>
                   <h5>{{Experiencia.nombreE}}</h5>
               </td>
-              <td >
+              <td>
                 <h6>{{Experiencia.descripcionE}}</h6>
               </td>
-              <td *ngIf="isLogged">
+              <!-- Botones de Editar y borrar -->
+              <td *ngIf="isLogged" class="col-lg-1">
                   <button class="btn btn-secondary" routerLink="/editexp/{{Experiencia.id}}">
-                    <i class="bi bi-pen-fill"></i></button>
-              </td>
-              <td *ngIf="isLogged">
-                 <button class="btn btn-danger" (click)="delete(Experiencia.id)">
-                  <i class="bi bi-trash2-fill"></i></button>
+                    <i class="bi bi-pen-fill"></i>
+                  </button>
+                  <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                    <i class="bi bi-trash2-fill"></i>
+                  </button>
               </td>
           </tr>
       </tbody>
   </table>
-  <div class="col-lg-1"></div>
-  <br>
-  <a href="#info-actions">Volver</a>
-
 </div>
+<div class="col-lg-1"></div>
+  <br>
+  <a href="#logoAP" id="volver" ><button type="button" class="btn btn-outline-dark">Volver</button></a>
 </div>
     <!--<ul style="list-style-type: square;" class="items-list" id="expList">-->
       

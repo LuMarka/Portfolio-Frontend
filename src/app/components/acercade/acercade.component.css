@@ -7,19 +7,16 @@
     margin: 10px 10px;
     text-align: center;
     width: auto;
-    
-}
-div{
     text-align: center;
     background-color: rgb(194, 181, 211);
-    
 }
+
 
 #nombre{
     font-weight: bold;
     margin-top: 50px;
     margin-bottom: 25px;
-    font-size: 38px;;
+    font-size: 28px;;
     
 }
 
@@ -27,7 +24,7 @@ div{
     #fotoperfil{
         position: relative;
         border-radius: 50%;
-        width: 90%;
+        width: 78%;
         box-shadow: 3px 3px 3px rgb(106, 72, 138);
         left: 8%;
         top:-30%;

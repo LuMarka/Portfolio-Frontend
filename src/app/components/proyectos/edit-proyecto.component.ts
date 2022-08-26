@@ -19,6 +19,7 @@ export class EditProyectoComponent implements OnInit {
     const id = this.activatedRouter.snapshot.params['id'];
     this.proyectoS.detail(id).subscribe(
       data=>{
+        alert("Usted está apunto de modificar el elemento!!");
         this.proyecto = data;
       }, err=>{
         alert("Error al modificar proyecto");
@@ -31,6 +32,7 @@ export class EditProyectoComponent implements OnInit {
     const id=this.activatedRouter.snapshot.params['id'];
     this.proyectoS.update(id, this.proyecto).subscribe(
       data => {
+        alert("Elemento modificado correctamente!");
         this.router.navigate(['']);
       },err =>{
         alert("Error al modificar el proyecto!")

@@ -10,13 +10,16 @@
 
 h1, h5, h6{
     display:inline;
+    text-align: justify;
 }
+
 #educ{
     width:67px;
     margin-left: 15px;
     border-radius:50%;
    
 }
+
 /*#logoAP{
     width:90px;
     height: 35px;

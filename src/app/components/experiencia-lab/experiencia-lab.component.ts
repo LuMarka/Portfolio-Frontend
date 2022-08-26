@@ -32,6 +32,7 @@ export class ExperienciaLabComponent implements OnInit {
     if(id != undefined){
       this.sExperiencia.delete(id).subscribe(
         data => {
+          alert ("Elemento eliminado correctamente");
           this.cargarExperiencia();
         }, err => {
           alert("No se pudo eliminar la experiencia");

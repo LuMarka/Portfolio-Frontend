@@ -20,6 +20,7 @@
 }
 .img-proyecto{
     box-shadow: 10px 10px 30px #000000;
+    
 }
 .img-proyecto:hover{
     animation: vibrate 0.5s;
@@ -45,6 +46,7 @@
     display:inline-block;
     text-align: justify;
 }
+
 
 /*.img-proyecto-marash{
     border-radius:50%;
