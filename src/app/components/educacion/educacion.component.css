@@ -20,6 +20,13 @@ h1, h5, h6{
    
 }
 
+@media (min-width: 429px) { 
+    .botones{
+        left: 10%;
+
+    }
+}
+
 /*#logoAP{
     width:90px;
     height: 35px;
