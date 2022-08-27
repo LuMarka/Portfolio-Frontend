@@ -63,7 +63,7 @@ https://firebase.google.com/firebase).
 
 4. Compilar y montar el proyecto utilizando el comando `ng serve -o` o bien `ng serve` y navegar al link `http://localhost:4200/` .
 
-*I**MPORTANTE: **El servidor con el proyecto Backend debe encontrarse activo para poder obtener los datos, de lo contrario, no se renderizarán los componentes de Angular. Para más información ir al repositorio [backend](https://github.com/LuMarka/Portfolio-Backend).*
+**IMPORTANTE:** El servidor con el proyecto Backend debe encontrarse activo para poder obtener los datos, de lo contrario, no se renderizarán los componentes de Angular. Para más información ir al repositorio [backend](https://github.com/LuMarka/Portfolio-Backend).*
 
 
 
