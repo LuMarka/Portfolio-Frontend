@@ -1,30 +1,34 @@
-# 💻 Portfolio Web 
+# 💻 Portfolio Web Full Stack
 ### Proyecto Integrador - #YoProgramo (AP)
 ------------
-***NOTA: **Este repositorio se encuentra todo lo relacionado al Frontend del proyecto, para dirigirse al repositorio del Backend hacer [click aquí](https://github.com/LuMarka/Portfolio-Backend "click aquí")*
+**NOTA**: En este repositorio se encuentra todo lo relacionado al Frontend del proyecto, para dirigirse al repositorio del Backend hacer [click aquí](https://github.com/LuMarka/Portfolio-Backend "click aquí")
 
 ### 📝 Descripción
 ------------
-- Este** portfolio** fué realizado como** proyecto final integrador** a presentar en el curso **#YoProgramo** de **Argentina Programa.****
+- Este **portfolio** fué realizado como** proyecto final integrador** a presentar en el curso **#YoProgramo** de **Argentina Programa.****
 
 - Se trata de una ***Single Page Application*** (SPA) generada con el framework de JavaScript [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0. y para su desarrollo se utilizaron los siguientes lenguajes: [HTML](https://developer.mozilla.org/es/docs/Glossary/HTML5) , [CSS](https://developer.mozilla.org/es/docs/Web/CSS),  [TypeScript](https://www.typescriptlang.org/) y [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript).
 
- Otro framework que ha sido incorporado en el diseño del proyecto es  [Bootstrap](https://getbootstrap.com/) (en su versión 5.2.0) para el formulario de Login ([Bootstrap Login form](https://mdbootstrap.com/docs/standard/extended/login/)) , los íconos para ejecutar las acciones de editar, eliminar y agregar ([Bootstrap Icons](https://icons.getbootstrap.com/)) , el  diseño responsivo de las imágenes y la aplicación en general. Así como [Popper.js](https://popper.js.org/) que es una librería de Javascript que permite añadir tooltips y popovers en elementos HTML y ofrece un montón de opciones de personalización.
+- Otro framework que ha sido incorporado en el diseño del proyecto es Bootstrap (en su versión 5.2.0) para el formulario de Login (Bootstrap Login form) , los íconos para ejecutar las acciones de editar, eliminar y agregar (Bootstrap Icons) , el diseño responsivo de las imágenes y la aplicación en general. Así como Popper.js que es una librería de Javascript que permite añadir tooltips y popovers en elementos HTML y ofrece un montón de opciones de personalización.
 
- También, se pueden encontrar las siguientes dependencias :
- -    Ngx-toastr |   alertas que comunican determinados sucesos al usuario
- -    Ng-circle-progress |   animaciones que representan los skills en porcentajes
- -   FortAwesome | íconos
+- También, se pueden encontrar las siguientes dependencias :
+
+		Ngx-toastr | alertas que comunican determinados sucesos al usuario
+		Ng-circle-progress | animaciones que representan los skills en porcentajes
+		FortAwesome | íconos
+
+- El deploy del Frontend de esta aplicación fué realizado en la plataforma Firebase.
+
+- Los campos de los datos editables en el frontend provienen de las entidades de la base de datos alojada en Clever Cloud .Estas tablas fueron generadas desde el backend en lenguaje Java.
 
 
 - El deploy del Frontend de esta aplicación fué realizado en la plataforma [Firebase](
 https://firebase.google.com/firebase).
 
-- Los campos de los datos editables en el frontend provienen de las entidades de la base de datos alojada en [Clever Cloud](https://www.clever-cloud.com/) .Estas tablas fueron generadas desde el [backend](https://github.com/LuMarka/Portfolio-Backend) en lenguaje [Java](https://www.java.com/es/). Se adjunta DER a los archivos del presente repositorio.
+- Los campos de los datos editables en el frontend provienen de las entidades de la base de datos alojada en [Clever Cloud](https://www.clever-cloud.com/) .Estas tablas fueron generadas desde el [backend](https://github.com/LuMarka/Portfolio-Backend) en lenguaje [Java](https://www.java.com/es/). 
 
 
-
-###✅ Manejo de la App
+### ✅ Manejo de la App
 ------------
 - Podemos ingresar desde el apartado "Login" en la barra de navegación, con un usuario y una contraseña previamente creados a través de una API.
 
@@ -57,7 +61,7 @@ https://firebase.google.com/firebase).
 
 		authURL= 'http://localhost:8080/auth'
 
-4. Compilar y montar el proyecto utilizando el comando ng serve -o o bien ng serve y navegar al link `http://localhost:4200/` .
+4. Compilar y montar el proyecto utilizando el comando `ng serve -o` o bien `ng serve` y navegar al link `http://localhost:4200/` .
 
 *I**MPORTANTE: **El servidor con el proyecto Backend debe encontrarse activo para poder obtener los datos, de lo contrario, no se renderizarán los componentes de Angular. Para más información ir al repositorio [backend](https://github.com/LuMarka/Portfolio-Backend).*
 
@@ -69,7 +73,7 @@ https://firebase.google.com/firebase).
 
 - Ejecute `ng serve`. Navegue a http://localhost:4200/. Si cambia cualquiera de los archivos de origen, la aplicación se recargará automáticamente .
 
-- Para crear componentes en [Angular CLI](https://github.com/angular/angular-cli)se debe ejecutar en la terminal del editor de código o en el CMD `ng generate component component-name` o `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Para crear componentes en [Angular CLI](https://github.com/angular/angular-cli)se debe ejecutar en la terminal del editor de código o en el CMD `ng generate component/component-name` o `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 - Ejecute `ng build` para compilar el proyecto. Los artefactos de compilación se almacenarán en el directorio `dist/`.
 
