@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 import { Educacion } from 'src/app/model/educacion';
 import { EducacionService } from 'src/app/service/educacion.service';
 import { TokenService } from 'src/app/service/token.service';
@@ -11,7 +12,7 @@ import { TokenService } from 'src/app/service/token.service';
 export class EducacionComponent implements OnInit {
   educacion: Educacion[] = [];
 
-  constructor(private educacionS: EducacionService, private tokenService: TokenService) {}
+  constructor(private educacionS: EducacionService, private tokenService: TokenService, private toastr: ToastrService) {}
   isLogged = false;
 
   ngOnInit(): void {
@@ -35,10 +36,12 @@ export class EducacionComponent implements OnInit {
     if(id!=undefined){
       this.educacionS.delete(id).subscribe(
         data => {
-          alert ("Elemento eliminado correctamente");
+          //alert ("Elemento eliminado correctamente");
+          this.toastr.success('Elemento eliminado correctamente!');
           this.cargarEducacion();
         }, err =>{
-          alert("No se pudo eliminar!");
+          //alert("No se pudo eliminar!");
+          this.toastr.error("El elemento seleccionado no pudo ser eliminado!");
         }
       )
     }
