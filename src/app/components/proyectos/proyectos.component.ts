@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 import { Proyecto } from 'src/app/model/proyecto';
 import { ProyectoService } from 'src/app/service/proyecto.service';
 import { TokenService } from 'src/app/service/token.service';
@@ -12,7 +13,7 @@ export class ProyectosComponent implements OnInit {
   proyecto: Proyecto[]=[];
 
 
-  constructor(private proyectoS: ProyectoService, private tokenService: TokenService) { }
+  constructor(private proyectoS: ProyectoService, private tokenService: TokenService, private toastr: ToastrService) { }
   isLogged = false;
 
   ngOnInit(): void {
@@ -36,10 +37,12 @@ export class ProyectosComponent implements OnInit {
     if(id != undefined){
       this.proyectoS.delete(id).subscribe(
         data => {
-          alert ("Elemento eliminado correctamente");
+          //alert ("Elemento eliminado correctamente");
+          this.toastr.success('Elemento eliminado correctamente!');
           this.cargarProyecto();
         }, err => {
-          alert("No se pudo borrar el proyecto");
+          //alert("No se pudo borrar el proyecto");
+          this.toastr.error("El elemento seleccionado no pudo ser eliminado!");
         }
       )
     }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { Proyecto } from 'src/app/model/proyecto';
 import { ProyectoService } from 'src/app/service/proyecto.service';
 
@@ -14,7 +15,7 @@ export class NewProyectoComponent implements OnInit {
   descripcionP: string;
   img: string;
 
-  constructor(private proyectoS:ProyectoService, private router: Router) { }
+  constructor(private proyectoS:ProyectoService, private router: Router, private toastr: ToastrService) { }
 
   ngOnInit(): void {
   }
@@ -23,10 +24,12 @@ export class NewProyectoComponent implements OnInit {
     const proyecto = new Proyecto(this.nombreP, this.descripcionP, this.img);
     this.proyectoS.save(proyecto).subscribe(
       data=>{
-        alert("Proyecto añadido exitosamente!");
+        //alert("Proyecto añadido exitosamente!");
+        this.toastr.success('Elemento añadido correctamente!');
         this.router.navigate(['']);
       }, err=>{
-        alert("Error al añadir proyecto");
+        //alert("Error al añadir proyecto");
+        this.toastr.error("ATENCIÓN!! El elemento no pudo ser cargado!");
         this.router.navigate(['']);
       }
     )
