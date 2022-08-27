@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Skill } from 'src/app/model/skill';
 import { SkillService } from 'src/app/service/skill.service';
-
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-editskill',
@@ -11,16 +11,18 @@ import { SkillService } from 'src/app/service/skill.service';
 })
 export class EditskillComponent implements OnInit {
   skill: Skill = null;
-  constructor(private sSkill: SkillService, private activatedRouter: ActivatedRoute, private router: Router) { }
+  constructor(private sSkill: SkillService, private activatedRouter: ActivatedRoute, private router: Router, private toastr: ToastrService) { }
 
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
     this.sSkill.detail(id).subscribe(
       data =>{
-        alert("Usted está apunto de modificar el elemento!!");
+        //alert("Usted está por modificar el elemento!!");
+        this.toastr.warning('ALERTA!! Usted está por modificar el elemento seleccionado!!');
         this.skill = data;
       }, err =>{
-        alert("Error al modificar la skill!");
+        //alert("Error al modificar la skill!");
+        this.toastr.error("Error al modificar el elemento seleccionado!");
         this.router.navigate(['']);
       }
     )
@@ -30,10 +32,12 @@ export class EditskillComponent implements OnInit {
     const id = this.activatedRouter.snapshot.params['id'];
     this.sSkill.update(id, this.skill).subscribe(
       data => {
-        alert("Elemento modificado correctamente!");
+        //alert("Elemento modificado correctamente!");
+        this.toastr.success('Elemento modificado correctamente!');
         this.router.navigate(['']);
       }, err =>{
-         alert("Error al modificar la skill!");
+         //alert("Error al modificar la skill!");
+         this.toastr.error('Error al modificar el elemento seleccionado!');
          this.router.navigate(['']);
       }
     )
