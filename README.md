@@ -5,7 +5,7 @@
 
 ### 📝 Descripción
 ------------
-- Este **portfolio** fué realizado como** proyecto final integrador** a presentar en el curso **#YoProgramo** de **Argentina Programa.****
+- Este **portfolio** fué realizado como **proyecto final integrador** a presentar en el curso **#YoProgramo** de **Argentina Programa.**
 
 - Se trata de una ***Single Page Application*** (SPA) generada con el framework de JavaScript [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0. y para su desarrollo se utilizaron los siguientes lenguajes: [HTML](https://developer.mozilla.org/es/docs/Glossary/HTML5) , [CSS](https://developer.mozilla.org/es/docs/Web/CSS),  [TypeScript](https://www.typescriptlang.org/) y [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript).
 
